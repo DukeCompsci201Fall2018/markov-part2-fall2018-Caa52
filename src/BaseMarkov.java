@@ -120,4 +120,5 @@ public class BaseMarkov  implements MarkovInterface<String> {
 		myText = text;
 	}
 	
+
 }

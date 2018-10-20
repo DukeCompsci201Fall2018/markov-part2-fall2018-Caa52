@@ -8,8 +8,8 @@ public class MarkovTest {
 	// TODO: change to EfficientMarkov
 
 	private MarkovInterface<String> getModel(int order) {
-		// TODO: change to EfficientMarkov
-		return new BaseMarkov(order);
+		//TODO: change to EfficientMarkov
+		return new EfficientMarkov(order);
 	}
 	
 

@@ -6,7 +6,7 @@ import java.util.NoSuchElementException;
 /**
  * 
  * @author Collins Abanda
- *@param
+ * 
  *created EfficientWordMarkov class extension
  *initialized map as WordGram and ArrayList just as in BaseWordMarkov
  *created the EfficientWordMarkov constructor to initialize new map of WordGram, ArrayList called myMap
@@ -15,6 +15,12 @@ import java.util.NoSuchElementException;
 public class EfficientWordMarkov extends BaseWordMarkov {
 	private Map<WordGram, ArrayList<String>> myMap;
 
+/**
+ * 
+ * @param order
+ * @return EfficientWordMarkov 
+ * created initialized myMap
+ */
 	public EfficientWordMarkov(int order) {
 		super(order);
 		myMap = new HashMap<WordGram, ArrayList<String>>();
@@ -27,13 +33,14 @@ public class EfficientWordMarkov extends BaseWordMarkov {
 	/**
 	 * Create WordGram
 	 * 
-	 * @param source
-	 * @param start
-	 * @param size
+	 * @param text
+	 * @category void
+	 * @return null because its void constructor 
 	 * 
 	 * called override on setTraining
 	 * setTraining parameter is set as text
 	 */
+	
 	@Override
 	public void setTraining(String text) {
 		//split white spaces between words of text 
@@ -72,6 +79,10 @@ public class EfficientWordMarkov extends BaseWordMarkov {
 	}
 	
 	/**
+	 * 
+	 * @param WordGram Key
+	 * @return keys matched to values if key is contained in map
+	 * @throws NoSuchElementException if no key contained
 	 * Overide getFollows constructor
 	 * check weather or not Key is in new map
 	 */

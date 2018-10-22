@@ -8,11 +8,20 @@ import java.util.NoSuchElementException;
  *Created EfficientMarkov as extension of BaseMarkov
  *Initialized new map called myMap
  */
+
 public class EfficientMarkov extends BaseMarkov{
 	private Map<String, ArrayList<String>> myMap = new HashMap<String, ArrayList<String>>();
+
+/**
+ * 
+ * @param order
+ * @return EfficientMarkov
+ * New map is created and named myMap
+ */
 	
-//created EJfficientMarkov constructor
-//myMap assigned to map of string and arraylist
+	//created EJfficientMarkov constructor
+	//myMap assigned to map of string and arraylist
+		
 	public EfficientMarkov(int order) {
 		super(order);
 		myMap = new HashMap<String, ArrayList<String>>();
@@ -21,6 +30,13 @@ public class EfficientMarkov extends BaseMarkov{
 	public EfficientMarkov() {
 		this(3);
 	}
+	
+/**
+ * @param text 
+ * @category String
+ * @return constructed map with key and value 
+ * 
+ */
 	//created setTraining constructor and called override
 	@Override
 	public void setTraining(String text) {
@@ -64,6 +80,9 @@ public class EfficientMarkov extends BaseMarkov{
 	}
 	/**
 	 * created the getFollows constructor
+	 * @param Key 
+	 * @return myMap containing Key and value if myMap contains key 
+	 * @throws new NoSuchElementException if key is not found in map
 	 * check to see if map contains key or not 
 	 * return null at the end 
 	 */

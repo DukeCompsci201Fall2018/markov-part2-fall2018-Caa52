@@ -51,3 +51,8 @@ Run tests that you think are appropriate to determine if the order of the
 Markov Model has a significant impact on the running time for BaseMarkov. 
 Explain your reasoning.
 
+
+Answer:
+
+I ran the test with varying orders of 8, 10, 3, and 2. I noticed that the higher the order, the slower the running time
+It took longer to run as I increased the order, so yes order thus increases running time

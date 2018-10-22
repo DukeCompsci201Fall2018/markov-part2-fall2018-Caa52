@@ -9,7 +9,7 @@ import java.util.NoSuchElementException;
  *Initialized new map called myMap
  */
 public class EfficientMarkov extends BaseMarkov{
-	Map<String, ArrayList<String>> myMap = new HashMap<String, ArrayList<String>>();
+	private Map<String, ArrayList<String>> myMap = new HashMap<String, ArrayList<String>>();
 	
 //created EJfficientMarkov constructor
 //myMap assigned to map of string and arraylist
